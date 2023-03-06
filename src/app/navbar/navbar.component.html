@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" [ngClass]="{'bg-transparent navbar-light':scroll<100,'bg-primary navbar-dark':scroll>100}">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Navbar brand -->

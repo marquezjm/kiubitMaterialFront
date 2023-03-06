@@ -1,0 +1,26 @@
+.parallax{
+  /* The image used */
+  background-image: url("https://ff636f43e6.cbaul-cdnwnd.com/e0eef4fe6f99295f30f83e561ff2c5a0/200000614-a3e20a3e23/image-crop-200000612.jpeg?ph=ff636f43e6");
+
+  /* Set a specific height */
+  min-height: 50vh;
+
+  /* Create the parallax scrolling effect */
+
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.star{
+  color: #ffcd01;
+}
+
+.img-testimonio{
+  width: 100px;
+}
+
+.text-testimonio{
+  color: #919191;
+  border-color: hsla(0,0%,57%,.5);
+}
