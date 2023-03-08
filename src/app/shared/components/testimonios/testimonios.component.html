@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="text-center star" >
+        <i class="fa-solid fa-star mx-1" *ngFor="let i of [1,2,3,4,5]" ></i>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="display-3 text-primary fw-bolder">Testimonios</div>
+    </div>
+    <div class="row">
+        <div class="row mb-3">
+            <div class="col-md-4 col-6 mb-2 px-3" *ngFor="let testimonio of testimonios">
+                <div class="text-center">
+                    <img src="https://ff636f43e6.cbaul-cdnwnd.com/e0eef4fe6f99295f30f83e561ff2c5a0/200000210-14ccd14ccf/kisspng-computer-icons-user-profile-avatar-woman-business-woman-5ac9fb6c2c7bb5.9550002315231865401822.png?ph=ff636f43e6"
+                    class="img-fluid img-testimonio"
+                    *ngIf="testimonio.sexo=='F'">
+                    <img src="https://ff636f43e6.cbaul-cdnwnd.com/e0eef4fe6f99295f30f83e561ff2c5a0/200000700-afe47afe49/700/man.webp?ph=ff636f43e6"
+                    class="img-fluid img-testimonio"
+                    *ngIf="testimonio.sexo=='M'">
+                    <div class="text-center">
+                        <div class="text-center fw-lighter text-testimonio">{{testimonio.texto}}</div>
+                        <h3 class="text-primary fw-bold"> {{testimonio.nombre}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

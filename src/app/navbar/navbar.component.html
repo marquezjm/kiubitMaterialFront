@@ -1,20 +1,21 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" [ngClass]="{'bg-transparent navbar-light':scroll<100,'bg-primary navbar-dark':scroll>100}">
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top" #navbar>
   <!-- Container wrapper -->
   <div class="container-fluid">
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Kiubit</a>
-
     <!-- Toggle button -->
     <button
       class="navbar-toggler"
       type="button"
-      (click)="basicNavbar.toggle()"
+      (click)="sideNavService.toggle()"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <i class="fas fa-bars"></i>
     </button>
+    <!-- Navbar brand -->
+    <a class="navbar-brand fw-bolder" href="#">Kiubit</a>
+
+    
 
     <!-- Collapsible wrapper -->
     <div
@@ -24,12 +25,21 @@
       #basicNavbar="mdbCollapse"
     >
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">¿Quienes somos?</a>
+          <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/sobre-nosotros">¿Quienes somos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cursos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Publicaciones</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contacto</a>

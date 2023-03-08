@@ -1,4 +1,7 @@
-import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { NavbarService } from '../services/navbar.service';
+import { SidenavService } from '../services/sidenav.service';
+import { SidenavComponent } from '../sidenav/sidenav.component';
 
 @Component({
   selector: 'app-navbar',
@@ -6,8 +9,11 @@ import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angul
   styleUrls: ['./navbar.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit,AfterViewInit {
 
+  @ViewChild('sidenav') sidenav!:SidenavComponent
+  @ViewChild('navbar') navbar!:ElementRef
+  
   scroll:number=0
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll(event:any) {
@@ -15,9 +21,15 @@ export class NavbarComponent implements OnInit {
     this.scroll=document.documentElement.scrollTop
   }
 
-  constructor() { }
+  constructor(public sideNavService:SidenavService,private service: NavbarService) { }
+  ngAfterViewInit(): void {
+    console.log(this.navbar?.nativeElement.offsetHeight);
+    
+    this.service.altura=this.navbar?.nativeElement.offsetHeight
+  }
 
   ngOnInit(): void {
   }
+
 
 }

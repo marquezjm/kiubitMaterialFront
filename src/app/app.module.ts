@@ -23,6 +23,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { TestimoniosModule } from './shared/components/testimonios/testimonios.module';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     SidenavComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    QuienesSomosComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { HomeComponent } from './home/home.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TestimoniosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

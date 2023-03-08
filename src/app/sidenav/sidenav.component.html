@@ -1,5 +1,22 @@
-<div class="sidenav">
-    <div class="header-content">
-        Mi usuario
+<div class="sidenav d-flex align-items-center " [ngClass]="{'open':service.bandera}">
+    <div class="container ">
+        <div class=" row m-3 ">
+           <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()" routerLink="/sobre-nosotros">¿Quienes somos?</a>
+        </div>
+        <div class=" row m-3 ">
+           <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()">Servicios</a>
+        </div>
+        <div class=" row m-3 ">
+           <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()">Cursos</a>
+        </div>
+        <div class=" row m-3 ">
+           <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()">Blog</a>
+        </div>
+        <div class=" row m-3 ">
+           <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()">Publicaciones</a>
+        </div>
+        <div class=" row m-3 ">
+           <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()">Contacto</a>
+        </div>
     </div>
 </div>

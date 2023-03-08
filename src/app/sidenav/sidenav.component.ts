@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidenavService } from '../services/sidenav.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor() { }
+  bandera:boolean=false
+  constructor(public service:SidenavService) { }
 
   ngOnInit(): void {
   }
+
 
 }
