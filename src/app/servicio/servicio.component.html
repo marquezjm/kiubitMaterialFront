@@ -1,0 +1,36 @@
+<div  [ngStyle]="{'padding-top.px':navbarService.altura}">
+    <div class="container my-5">
+        <div class="row">
+            <div class="text-primary text-center">
+                <h1 class="fw-bolder">{{servicio.titulo}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <img [src]="servicio.imagen" class="img-fluid">
+                </div>
+                <div class="row">
+                    <div class="col-12 text-parrafo">
+                        <p>{{servicio.textoImagen}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 border-start border-5 border-primary ps-3 mb-3 fst-italic text-parrafo">
+                        {{servicio.mensaje}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 " >
+                <div class="row">
+                    <div class="col-12 text-parrafo" [innerHTML]="servicio.texto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-secondary" routerLink="/servicios">Regresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

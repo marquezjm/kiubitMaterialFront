@@ -1,0 +1,19 @@
+<div [ngStyle]="{'padding-top.px':navbarService.altura}">
+    <div class="container">
+        <div class="text-center">
+          <div class="display-3 text-primary fw-bolder mt-5">¿Qué te ofrecemos?</div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+          <div class="col-md-4 col-12 mb-2 px-3" role="button" *ngFor="let servicio of servicios" [routerLink]="servicio.url">
+            <div class="text-center">
+              <img [src]="servicio.imagen"
+              class="img-fluid img-testimonio">
+              <div class="text-center">
+                <h4 class="text-primary fw-bold ">{{servicio.titulo}}</h4>
+                <div class="text-center fw-lighter text-testimonio"> {{servicio.texto}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

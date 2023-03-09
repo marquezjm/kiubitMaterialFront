@@ -25,6 +25,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { TestimoniosModule } from './shared/components/testimonios/testimonios.module';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
+import { ServiciosComponent } from './servicios/servicios.component';
+import { ServicioComponent } from './servicio/servicio.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
     SidenavComponent,
     FooterComponent,
     HomeComponent,
-    QuienesSomosComponent
+    QuienesSomosComponent,
+    ServiciosComponent,
+    ServicioComponent
   ],
   imports: [
     BrowserModule,
