@@ -27,6 +27,8 @@ import { TestimoniosModule } from './shared/components/testimonios/testimonios.m
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ServicioComponent } from './servicio/servicio.component';
+import { CursosComponent } from './cursos/cursos.component';
+import { CursoComponent } from './curso/curso.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ServicioComponent } from './servicio/servicio.component';
     HomeComponent,
     QuienesSomosComponent,
     ServiciosComponent,
-    ServicioComponent
+    ServicioComponent,
+    CursosComponent,
+    CursoComponent
   ],
   imports: [
     BrowserModule,

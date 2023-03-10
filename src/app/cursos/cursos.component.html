@@ -1,0 +1,16 @@
+<div [ngStyle]="{'padding-top.px':navbarService.altura}">
+    <div class="container">
+        <div class="row">
+            <div class="text-primary text-center">
+                <h1 class="fw-bolder">Cursos de matemáticas</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let curso of cursos">
+                <div class="col-12 p-3">
+                    <img [src]="curso.imagen" class="img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
