@@ -1,17 +1,26 @@
 <div class="card">
-    <div class="bg-primary text-white cabecera align-items-center d-flex justify-content-center">
-        <div class="fw-bolder">{{curso.titulo}}</div>
+    <div class="card-header cabecera bg-primary">
+        <div class="row">
+            <div class="col-12 text-end">
+                <button type="button" class="btn-close btn-close-white" aria-label="Close" (click)="modalRef.close()"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center text-white fw-bolder">
+                {{curso.titulo}}
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-12 py-3 px-5">{{curso.descripcion}}</div>
     </div>
     <div class="row">
-        <div class="col-12 text-left py-3 px-5">Duracion: {{curso.duracion.horas}} horas, {{curso.duracion.minutos}} minutos</div>
+        <div class="col-12 py-3 px-5">Duracion: {{curso.duracion.horas}} horas, {{curso.duracion.minutos}} minutos</div>
     </div>
     <div class="row">
-        <div class="col-12 text-left py-3 px-5">Idioma: {{curso.idioma}}</div>
+        <div class="col-12 py-3 px-5">Idioma: {{curso.idioma}}</div>
     </div>
     <div class="row" >
-        <div *ngIf="curso.certificado" class="col-12 text-left py-3 px-5">Certificado de finalizacion</div>
+        <div *ngIf="curso.certificado" class="col-12 py-3 px-5">Certificado de finalizacion</div>
     </div>
 </div>

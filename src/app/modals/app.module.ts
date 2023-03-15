@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
@@ -19,32 +17,15 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { TestimoniosModule } from './shared/components/testimonios/testimonios.module';
-import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-import { ServicioComponent } from './servicio/servicio.component';
-import { CursosComponent } from './cursos/cursos.component';
-import { ModalsModule } from './modals/app.module';
+import { CursoComponent } from './curso/curso.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    SidenavComponent,
-    FooterComponent,
-    HomeComponent,
-    QuienesSomosComponent,
-    ServiciosComponent,
-    ServicioComponent,
-    CursosComponent,
+    CursoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     MdbAccordionModule,
     MdbCarouselModule,
     MdbCheckboxModule,
@@ -60,11 +41,9 @@ import { ModalsModule } from './modals/app.module';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule,
-    TestimoniosModule,
-    ModalsModule
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [CursoComponent]
 })
-export class AppModule { }
+export class ModalsModule { }
