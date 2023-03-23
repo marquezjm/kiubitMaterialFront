@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NavbarService } from '../services/navbar.service';
+import { NavbarService } from 'src/app/services/navbar.service';
 
 interface Servicio {
   id:string,

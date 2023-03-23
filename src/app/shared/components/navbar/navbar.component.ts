@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { NavbarService } from '../services/navbar.service';
-import { SidenavService } from '../services/sidenav.service';
+import { NavbarService } from 'src/app/services/navbar.service';
+import { SidenavService } from 'src/app/services/sidenav.service';
 import { SidenavComponent } from '../sidenav/sidenav.component';
 
 @Component({

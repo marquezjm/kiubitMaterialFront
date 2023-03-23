@@ -19,49 +19,18 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { TestimoniosModule } from './shared/components/testimonios/testimonios.module';
-import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-import { ServicioComponent } from './servicio/servicio.component';
-import { CursosComponent } from './cursos/cursos.component';
-import { ModalsModule } from './modals/app.module';
+import { SharedModule } from './shared/shared.module';
+import { MaterialModule } from './material.module';
+import { ModalsModule } from './modals/modals.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    SidenavComponent,
-    FooterComponent,
-    HomeComponent,
-    QuienesSomosComponent,
-    ServiciosComponent,
-    ServicioComponent,
-    CursosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MdbAccordionModule,
-    MdbCarouselModule,
-    MdbCheckboxModule,
-    MdbCollapseModule,
-    MdbDropdownModule,
-    MdbFormsModule,
-    MdbModalModule,
-    MdbPopoverModule,
-    MdbRadioModule,
-    MdbRangeModule,
-    MdbRippleModule,
-    MdbScrollspyModule,
-    MdbTabsModule,
-    MdbTooltipModule,
-    MdbValidationModule,
     BrowserAnimationsModule,
-    TestimoniosModule,
     ModalsModule
   ],
   providers: [],

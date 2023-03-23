@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdbModalService } from 'mdb-angular-ui-kit/modal';
-import { CursoComponent } from '../modals/curso/curso.component';
-import { NavbarService } from '../services/navbar.service';
+import { CursoComponent } from 'src/app/modals/curso/curso.component';
+import { NavbarService } from 'src/app/services/navbar.service';
 
 interface Curso{
   id:string,
