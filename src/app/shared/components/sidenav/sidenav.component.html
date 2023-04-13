@@ -1,5 +1,5 @@
-<div class="sidenav d-flex align-items-center " [ngClass]="{'open':service.bandera}">
-    <div class="container ">
+<div class="sidenav d-flex align-items-center " [ngClass]="{'open':service.bandera}" [ngStyle]="{'padding-top.px':navbarService.altura}">
+    <div class="container menu" >
         <div class=" row m-3 ">
            <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()" routerLink="/public/sobre-nosotros">¿Quienes somos?</a>
         </div>
@@ -17,6 +17,10 @@
         </div>
         <div class=" row m-3 ">
            <a class="display-4 text-white text-center fw-bolder" (click)="service.toggle()">Contacto</a>
+        </div>
+        <div class=" row m-3 ">
+           <div class="col-6 text-center"><button type="button" class="btn btn-dark">Iniciar Sesion</button></div>
+           <div class="col-6 text-center"><button type="button" class="btn btn-dark">Registrarse</button></div>
         </div>
     </div>
 </div>

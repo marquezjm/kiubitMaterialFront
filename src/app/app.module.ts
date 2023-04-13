@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './material.module';
 import { ModalsModule } from './modals/modals.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ModalsModule } from './modals/modals.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ModalsModule
+    ModalsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
