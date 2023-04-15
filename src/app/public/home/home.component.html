@@ -13,11 +13,11 @@
 
 <div class="container">
   <div class="row mb-3">
-    <div class="col-lg-3 col-md-4 col-6 mb-2 px-3 " *ngFor="let curso of cursos">
+    <div class="col-lg-3 col-md-4 col-6 mb-2 px-3 " *ngFor="let curso of listaCursos">
       <div class="bg-image">
-        <img [src]="curso.image" [alt]="curso.titulo" class="img-fluid">
+        <img [src]="curso.imagen" [alt]="curso.nombre" class="img-fluid">
         <div class="mask d-flex align-items-end justify-content-center">
-          <div class="text-white text-center fw-bold">{{curso.titulo}}</div>
+          <div class="text-white text-center fw-bold">{{curso.nombre}}</div>
         </div>
       </div>
     </div>

@@ -1,21 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Curso {
-  image:string,
-  titulo:string
-}
-
-interface Testimonio {
-  sexo:string,
-  texto:string,
-  nombre:string,
-}
-
-interface Servicio{
-  imagen:string,
-  titulo:string,
-  texto:string
-}
+import { CursosService } from 'src/app/services/cursos.service';
+import { Curso,Testimonio,Servicio } from '../../models/public.interface'
 
 @Component({
   selector: 'app-home',
@@ -24,7 +9,9 @@ interface Servicio{
 })
 export class HomeComponent implements OnInit {
 
-  cursos:Curso[]=[
+  listaCursos:Curso[]=[]
+
+  /*cursos:Curso[]=[
     {
       image:'https://ff636f43e6.cbaul-cdnwnd.com/e0eef4fe6f99295f30f83e561ff2c5a0/200000650-0794007942/ert.PNG?ph=ff636f43e6', titulo:'Aritmética y Álgebra'
     },
@@ -49,7 +36,7 @@ export class HomeComponent implements OnInit {
     {
       image:'https://ff636f43e6.cbaul-cdnwnd.com/e0eef4fe6f99295f30f83e561ff2c5a0/200000650-0794007942/ert.PNG?ph=ff636f43e6', titulo:'Aritmética y Álgebra'
     },
-  ]
+  ]*/
 
   testimonios:Testimonio[]=[
     {sexo:'F',texto:'”Excelente persona Miss Evelyn, quede muy contenta con sus clases y el costo nos permite apoyar a nuestros hijos.“',nombre:'Itzel Briseño'},
@@ -69,9 +56,14 @@ export class HomeComponent implements OnInit {
     {imagen:'https://ff636f43e6.cbaul-cdnwnd.com/e0eef4fe6f99295f30f83e561ff2c5a0/200000000-7b4fa7c473/Imagen1.png?ph=ff636f43e6',titulo:'Cursos, Talleres y Clases Particulares',texto:'Ya que sabemos todo el esfuerzo que haces por la educación de tus hijos.'},
   ]
 
-  constructor() { }
+  constructor(private cursosService:CursosService) { }
 
   ngOnInit(): void {
+    this.cursosService.getCursos().subscribe(data=>{
+      if(data.success){
+        this.listaCursos=data.response
+      }
+    })
   }
 
 }
