@@ -8,6 +8,7 @@
 
             <div class="text-center ">
                 <h4 class="text-black fw-bolder">Te damos la bienvenida a Kiubit</h4>
+                <h5 class="text-muted">Necesitamos unos datos antes de poder continuar</h5>
             </div>
             <!-- Email input -->
             <mdb-form-control class="mb-4">
@@ -35,7 +36,14 @@
                 <input mdbInput type="text" id="form1" class="form-control form-control-lg" />
                 <label mdbLabel class="form-label" for="form1">Repetir Contraseña</label>
             </mdb-form-control>
-  
+            
+            <div class="form-check">
+                <label class="form-check-label">Al completar mis datos acepto la <a routerLink="/public">Política de Privacidad.</a></label>
+              </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                <label class="form-check-label" for="form1Example3">Acepto los <a routerLink="/public">terminos y condiciones</a></label>
+              </div>
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-lg btn-block">Continuar</button>
   
