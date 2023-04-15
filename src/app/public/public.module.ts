@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from "@angular/forms";
 import { MaterialModule } from "../material.module";
 import { RegistrarComponent } from './registrar/registrar.component';
+import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
 
 @NgModule({
 
@@ -31,6 +32,7 @@ import { RegistrarComponent } from './registrar/registrar.component';
         SharedModule,
         PublicRoutingModule,
         FormsModule,
+        MdbFormsModule
     ],
     providers: [],
     exports:[
