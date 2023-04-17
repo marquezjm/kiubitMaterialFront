@@ -10,10 +10,11 @@ import { QuienesSomosComponent } from "./quienes-somos/quienes-somos.component";
 import { ServicioComponent } from "./servicio/servicio.component";
 import { ServiciosComponent } from "./servicios/servicios.component";
 import { LoginComponent } from './login/login.component';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MaterialModule } from "../material.module";
 import { RegistrarComponent } from './registrar/registrar.component';
 import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { MdbValidationModule } from "mdb-angular-ui-kit/validation";
 
 @NgModule({
 
@@ -32,7 +33,9 @@ import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
         SharedModule,
         PublicRoutingModule,
         FormsModule,
-        MdbFormsModule
+        MdbFormsModule,
+        ReactiveFormsModule,
+        MdbValidationModule
     ],
     providers: [],
     exports:[
