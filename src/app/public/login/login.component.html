@@ -11,7 +11,7 @@
             <a class="navbar-brand  card-title justify-content-center p-0 m-0" href="#"><h1 class="fw-bolder">Kiubit</h1></a>
             <!-- Email input -->
             <mdb-form-control class="mb-4">
-                <input mdbValidate mdbInput type="text" id="form1" class="form-control form-control-lg" formControlName="email"/>
+                <input mdbInput type="text" id="form1" class="form-control form-control-lg" formControlName="email" [ngClass]="{'validate-error':email.invalid}"/>
                 <label mdbLabel class="form-label" for="form1">Correo Electronico</label>
                 <mdb-error class="mt-1" *ngIf="email?.invalid && (email?.dirty || email?.touched)">Correo electronico es requerido</mdb-error>
             </mdb-form-control>
@@ -19,8 +19,8 @@
             <!-- Password input -->
 
             <mdb-form-control class="mb-4">
-                <input mdbValidate mdbInput type="password" id="form1" class="form-control form-control-lg" formControlName="password"/>
-                <label mdbLabel class="form-label" for="form1">Contraseña</label>
+                <input mdbInput type="password" id="form2" class="form-control form-control-lg" formControlName="password" [ngClass]="{'validate-error':password.invalid}"/>
+                <label mdbLabel class="form-label" for="form2">Contraseña</label>
                 <mdb-error class="mt-1" *ngIf="password?.invalid && (password?.dirty || password?.touched)">Contraseña es requerida</mdb-error>
                 <mdb-success *ngIf="false"></mdb-success>
             </mdb-form-control>
