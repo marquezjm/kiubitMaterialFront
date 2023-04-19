@@ -1,0 +1,18 @@
+<div class="container-sidebar transition" (mouseover)="abierto=true" (mouseleave)="abierto=false" [ngClass]="{'abierto':abierto}">
+    <div class="row justify-content-start px-3 pt-3 pb-5">
+        <div class="p-0 text-center transition delay " [ngClass]="{'col-6 transition delay':abierto,'col-12 transition delay':!abierto}"><a routerLink="/private" class="noLink"><img class="img-brand" src="assets/img/kiubit.svg"></a></div>
+        <div class="p-0 transition transition delay " [ngClass]="{'col-6 d-block transition delay':abierto,'d-none transition delay':!abierto}"><a routerLink="/private" class="noLink"><div class="fw-bolder text-black">Kiubit</div></a></div>
+    </div>
+    <div class="row px-3 pb-3">
+        <div class="p-0 text-center transition delay" [ngClass]="{'col-6 transition delay':abierto,'col-12 transition delay':!abierto}"><i class="fas fa-home"></i></div>
+        <div class="p-0 transition delay" [ngClass]="{'col-6 d-block transition delay':abierto,'d-none transition delay':!abierto}"><div class="fw-bolder text-black">Inicio</div></div>
+    </div>
+    <div class="row px-3 pb-3">
+        <div class="p-0 text-center transition delay" [ngClass]="{'col-6 transition delay':abierto,'col-12 transition delay':!abierto}"><i class="fas fa-user-graduate"></i></div>
+        <div class="p-0 transition delay" [ngClass]="{'col-6 d-block transition delay':abierto,'d-none transition delay':!abierto}"><div class="fw-bolder text-black">Mis Avance</div></div>
+    </div>
+    <div class="row px-3 pb-3">
+        <div class="p-0 text-center transition delay" [ngClass]="{'col-6 transition delay':abierto,'col-12 transition delay':!abierto}"><i class="fas fa-book"></i></div>
+        <div class="p-0 transition delay" [ngClass]="{'col-6 d-block transition delay':abierto,'d-none transition delay':!abierto}"><div class="fw-bolder text-black">Cursos</div></div>
+    </div>
+</div>

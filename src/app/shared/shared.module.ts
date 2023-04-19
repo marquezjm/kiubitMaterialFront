@@ -8,13 +8,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+import { PrivateSidebarComponent } from './components/private-sidebar/private-sidebar.component';
 
 @NgModule({
   declarations: [
     TestimoniosComponent,
     FooterComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    PrivateSidebarComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { TestimoniosComponent } from './components/testimonios/testimonios.compo
     TestimoniosComponent,
     FooterComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    PrivateSidebarComponent
   ],
   bootstrap: []
 })

@@ -1,0 +1,23 @@
+.container-sidebar{
+    width: 80px;
+    height: 100vh;
+    overflow-x: hidden;
+    border-right: 1px solid #E6E6EA;;
+}
+
+.img-brand{
+    height: 40px;
+    width: auto;
+}
+
+.abierto{
+    width: 250px
+}
+
+.transition{
+    transition: all .5s;
+}
+
+.delay{
+    transition-delay: .5s !important;
+}
