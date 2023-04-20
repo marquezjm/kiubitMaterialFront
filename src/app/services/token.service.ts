@@ -89,6 +89,6 @@ export class TokenService {
 
   public logOut(){
     window.localStorage.clear()
-    this.router.navigate(['/login'])
+    this.router.navigate(['/public'])
   }
 }
