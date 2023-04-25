@@ -1,0 +1,27 @@
+.componente-padre {
+  position: relative;
+  //padding-top: 50px; /* asumiendo que el componente fijo tiene una altura de 50px */
+}
+.fixed-component{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 80px;
+    height: 100%;
+    background-color: aquamarine;
+    transition: all .5s;
+}
+.fixed-component:hover{
+  width: 150px;
+}
+
+.component-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
