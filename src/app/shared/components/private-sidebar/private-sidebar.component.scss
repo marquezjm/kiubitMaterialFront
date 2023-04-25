@@ -3,7 +3,9 @@
     height: 100vh;
     overflow-x: hidden;
     border-right: 1px solid #E6E6EA;
-    background-color: #f3f3f361;
+    background-color: #f3f3f3;
+    position: fixed;
+    z-index: 100;
 }
 
 .img-brand{

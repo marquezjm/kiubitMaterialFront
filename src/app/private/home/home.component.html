@@ -1,7 +1,11 @@
-<app-private-sidebar></app-private-sidebar>
-<router-outlet ></router-outlet>
+<div class="parent-component">
+    <app-private-sidebar class="d-md-block d-none"></app-private-sidebar>
+    <div class="component-one">
+        <router-outlet></router-outlet>
+    </div>
 
+</div>
 <!--<div class="parent-component">
-  <div class="fixed-component">componente fijo</div>
-  <div class="component-one">componente uno</div>
+  <div class="fixed-component"><app-private-sidebar></app-private-sidebar></div>
+  <div class="component-one"><router-outlet ></router-outlet></div>
 </div>-->
