@@ -1,5 +1,5 @@
 <div class="parent-component">
-    <app-private-sidebar class="d-md-block d-none"></app-private-sidebar>
+    <app-private-sidebar class="transition" ></app-private-sidebar> <!--class="  transition" [ngClass]="{' visible opacity-100':sidenavService.banderaPrivate,' invisible opacity-0':!sidenavService.banderaPrivate}"-->
     <div class="component-one">
         <router-outlet></router-outlet>
     </div>

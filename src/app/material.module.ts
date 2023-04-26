@@ -31,6 +31,7 @@ const modules=[
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    MdbTabsModule
 ]
 @NgModule({
     declarations: [

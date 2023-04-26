@@ -17,3 +17,6 @@ $font-family-base: $font-family-nunito !default;
  
 @import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
 
+.transition{
+    transition: all .5s;
+}

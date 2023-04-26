@@ -9,12 +9,16 @@ import { MdbValidationModule } from "mdb-angular-ui-kit/validation";
 import { HomeComponent } from "./home/home.component";
 import { PrivateRoutingModule } from "./private-routing.module";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CursosComponent } from './cursos/cursos.component';
+import { AppComponent } from './app/app.component';
 
 @NgModule({
 
     declarations: [
         HomeComponent,
-        DashboardComponent
+        DashboardComponent,
+        CursosComponent,
+        AppComponent
     ],
     imports: [
         CommonModule,
@@ -23,7 +27,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
         MdbFormsModule,
         ReactiveFormsModule,
         MdbValidationModule,
-        PrivateRoutingModule
+        PrivateRoutingModule,
     ],
     providers: [],
     exports:[

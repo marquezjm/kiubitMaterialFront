@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidenavService } from 'src/app/services/sidenav.service';
 import { TokenService } from 'src/app/services/token.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class PrivateSidebarComponent implements OnInit {
 
   abierto:boolean=false
 
-  constructor(private tokenService:TokenService) { }
+  constructor(private tokenService:TokenService,public sidenavService:SidenavService) { }
 
   ngOnInit(): void {
   }

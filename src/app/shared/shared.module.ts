@@ -29,7 +29,8 @@ import { PrivateSidebarComponent } from './components/private-sidebar/private-si
     FooterComponent,
     NavbarComponent,
     SidenavComponent,
-    PrivateSidebarComponent
+    PrivateSidebarComponent,
+    MaterialModule
   ],
   bootstrap: []
 })

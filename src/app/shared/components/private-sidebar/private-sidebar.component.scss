@@ -1,11 +1,14 @@
 .container-sidebar{
+    position: fixed;
+    z-index: 100;
+}
+
+.sidebar{
     width: 80px;
     height: 100vh;
     overflow-x: hidden;
     border-right: 1px solid #E6E6EA;
     background-color: #f3f3f3;
-    position: fixed;
-    z-index: 100;
 }
 
 .img-brand{
@@ -14,13 +17,38 @@
 }
 
 .abierto{
-    width: 250px
+    width: 250px;
+    
 }
 
 .transition{
-    transition: all .5s;
+    transition: all .5s,z-index 0s;
 }
 
 .delay{
     transition-delay: .5s !important;
 }
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    
+}
+.contenedor:has(.abierto){
+    background-color: #d9d9d98a;
+    backdrop-filter: blur(5px);
+}
+
+@media only screen and (max-width: 766px) {
+    .contenedor{
+        width: 100vw;
+    }
+    .container-sidebar.cerrado-sidenav{
+        right: 100%;
+    }
+    .container-sidebar.abierto-sidenav{
+        right: 0%;
+    }
+}
+
