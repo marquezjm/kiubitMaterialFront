@@ -11,6 +11,8 @@ import { PrivateRoutingModule } from "./private-routing.module";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { AppComponent } from './app/app.component';
+import { AuthInterceptor } from "../interceptors/auth.interceptor";
+import { HTTP_INTERCEPTORS } from "@angular/common/http";
 
 @NgModule({
 
