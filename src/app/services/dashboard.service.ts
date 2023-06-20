@@ -14,6 +14,6 @@ export class DashboardService {
   constructor(private http:HttpClient) { }
 
   getUltimoVisto(){
-    return this.http.get<CommonResponse<SeleccionarUltimoVistoResponse>>(`${this.url}/public/cursos/seleccionarUltimoVisto`)
+    return this.http.get<CommonResponse<SeleccionarUltimoVistoResponse>>(`${this.url}/private/cursos/seleccionarUltimoVisto`)
   }
 }
