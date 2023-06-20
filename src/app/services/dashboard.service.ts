@@ -9,11 +9,11 @@ import { SeleccionarUltimoVistoResponse } from '../models/dashboard.interface';
 })
 export class DashboardService {
 
-  url=environment.server_url
+  url='api'//environment.server_url
 
   constructor(private http:HttpClient) { }
 
   getUltimoVisto(){
-    return this.http.get<CommonResponse<SeleccionarUltimoVistoResponse>>(`${this.url}/private/cursos/seleccionarUltimoVisto`)
+    return this.http.get<CommonResponse<SeleccionarUltimoVistoResponse>>(`${this.url}/public/cursos/seleccionarUltimoVisto`)
   }
 }

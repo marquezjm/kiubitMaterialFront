@@ -46,7 +46,7 @@ export class AuthInterceptor implements HttpInterceptor {
         }))*/
         return next.handle(req);
       }else if(err.status!=404 && err.status!=403){
-        this.tokenService.logOut()
+        //this.tokenService.logOut()
         return throwError(()=>new Error(err.message))
       }else{
         return next.handle(req);
