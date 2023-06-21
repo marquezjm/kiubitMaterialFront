@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { CommonResponse } from '../models/public.interface';
-import { SeleccionarUltimoVistoResponse } from '../models/dashboard.interface';
+import { SeleccionarSuscripcionesUsuarioResponse, SeleccionarUltimoVistoResponse } from '../models/dashboard.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +15,9 @@ export class DashboardService {
 
   getUltimoVisto(){
     return this.http.get<CommonResponse<SeleccionarUltimoVistoResponse>>(`${this.url}/private/cursos/seleccionarUltimoVisto`)
+  }
+
+  getSuscripciones(){
+    return this.http.get<CommonResponse<SeleccionarSuscripcionesUsuarioResponse[]>>(`${this.url}/private/cursos/seleccionarSuscripcionesUsuario`)
   }
 }

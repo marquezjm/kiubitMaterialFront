@@ -8,3 +8,13 @@ export interface SeleccionarUltimoVistoResponse{
     tipo_tema: string;
     duracion_tema: number;
 }
+
+export interface SeleccionarSuscripcionesUsuarioResponse{
+    id_curso:string;
+    nombre_curso:string;
+    imagen:string;
+    modulos:number;
+    horas:number;
+    minutos:number;
+    segundos:number;
+}
