@@ -2,8 +2,8 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from "./app/app.component";
 import { CursosComponent } from "./cursos/cursos.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
 import { HomeComponent } from "./home/home.component";
+import { DashboardComponent } from "./dashboard/components/dashbord/dashboard.component";
 
 const routes: Routes = [
   {path:'', component:HomeComponent,children:[
