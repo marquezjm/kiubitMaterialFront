@@ -20,4 +20,8 @@ export class DashboardService {
   getSuscripciones(){
     return this.http.get<CommonResponse<SeleccionarSuscripcionesUsuarioResponse[]>>(`${this.url}/private/cursos/seleccionarSuscripcionesUsuario`)
   }
+
+  getRecomendados(){
+    return this.http.get<CommonResponse<SeleccionarSuscripcionesUsuarioResponse[]>>(`${this.url}/private/cursos/seleccionarRecomendados`)
+  }
 }

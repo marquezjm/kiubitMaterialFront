@@ -1,5 +1,5 @@
-<div class="row pt-3">
-    <div *ngFor="let curso of listaCursos" class="col-12 col-sm-6 col-md-4 col-lg-3">
+<div class="row pt-2">
+    <div *ngFor="let curso of listaCursos" class="col-12 col-sm-6 col-md-4 col-lg-3 pointer" (click)="abrirCurso(curso.id_curso)">
         <div class="row h-100 p-1">
             <div class="col-12  curso rounded-9">
                 <div class="row h-50 rounded-9 rounded-bottom" style="background-color: azure;">

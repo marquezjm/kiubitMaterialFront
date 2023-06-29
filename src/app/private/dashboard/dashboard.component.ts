@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
 
   ultimoVisto = {} as SeleccionarUltimoVistoResponse
   listSuscripciones:SeleccionarSuscripcionesUsuarioResponse[]=[]
+  listRecomendados:SeleccionarSuscripcionesUsuarioResponse[]=[]
 
   constructor(private sidenavService:SidenavService,private dashboardService:DashboardService) { }
 
@@ -30,6 +31,13 @@ export class DashboardComponent implements OnInit {
         
       }
     })
+    /*this.dashboardService.getRecomendados().subscribe(data =>{
+      if(data.success){
+        this.listRecomendados=data.response
+        console.log(this.listRecomendados);
+        
+      }
+    })*/
   }
 
   click(){

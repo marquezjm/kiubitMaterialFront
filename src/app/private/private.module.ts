@@ -11,8 +11,10 @@ import { PrivateRoutingModule } from "./private-routing.module";
 import { AppComponent } from './app/app.component';
 import { AuthInterceptor } from "../interceptors/auth.interceptor";
 import { HTTP_INTERCEPTORS } from "@angular/common/http";
-import { DashboardComponent } from "./dashboard/components/dashbord/dashboard.component";
 import { CursosComponent } from "./dashboard/components/curso/cursos.component";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { RecomendadosComponent } from './dashboard/components/recomendados/recomendados.component';
+import { CursoComponent } from './curso/curso.component';
 
 @NgModule({
 
@@ -20,7 +22,9 @@ import { CursosComponent } from "./dashboard/components/curso/cursos.component";
         HomeComponent,
         DashboardComponent,
         AppComponent,
-        CursosComponent
+        CursosComponent,
+        RecomendadosComponent,
+        CursoComponent
     ],
     imports: [
         CommonModule,

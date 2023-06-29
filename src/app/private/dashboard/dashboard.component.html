@@ -1,4 +1,9 @@
-<div class="container" (click)="click()">
+<div class="p-2">
+    <button type="button" class="d-block d-md-none btn btn-link " (click)="click()">
+        <i class="fas fa-bars fa-2x"></i>
+    </button>
+</div>
+<div class="container" >
     <div class="row">
         <div class="col-md-6 col-12 pt-5">
             <h1 class="text-primary fw-bolder ">Bienvenido</h1>
@@ -39,5 +44,17 @@
             </div>
         </div>
     </div>
-    <app-cursos [cursos]="listSuscripciones"></app-cursos>
+    <div *ngIf="listSuscripciones.length>0">
+        <div class="row pt-5">
+            <h3  class="fw-bolder">Mis Cursos</h3>
+        </div>
+        <app-cursos [cursos]="listSuscripciones"></app-cursos>
+    </div>
+
+    <div *ngIf="listRecomendados.length>0">
+        <div class="row pt-2">
+            <h3  class="fw-bolder">Cursos Recomendados</h3>
+        </div>
+        <app-cursos [cursos]="listRecomendados"></app-cursos>
+    </div>
 </div>
