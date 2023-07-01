@@ -15,6 +15,8 @@ import { CursosComponent } from "./dashboard/components/curso/cursos.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { RecomendadosComponent } from './dashboard/components/recomendados/recomendados.component';
 import { CursoComponent } from './curso/curso.component';
+import { ModuloComponent } from './curso/components/modulo/modulo.component';
+import { TemaComponent } from './curso/components/tema/tema.component';
 
 @NgModule({
 
@@ -24,7 +26,9 @@ import { CursoComponent } from './curso/curso.component';
         AppComponent,
         CursosComponent,
         RecomendadosComponent,
-        CursoComponent
+        CursoComponent,
+        ModuloComponent,
+        TemaComponent
     ],
     imports: [
         CommonModule,
