@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CursosService } from 'src/app/services/cursos.service';
 
 @Component({
   selector: 'app-curso',
@@ -8,9 +9,17 @@ import { Router } from '@angular/router';
 })
 export class CursoComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  idCurso:string=''
+
+  constructor(private router:Router,private route:ActivatedRoute,private cursoService:CursosService) { }
 
   ngOnInit(): void {
+    this.idCurso=this.route.snapshot.paramMap.get('id_curso')!
+    console.log(this.idCurso);
+    this.cursoService.getDetalleCurso(this.idCurso).subscribe(dato=>{
+      console.log(dato);
+      
+    })
   }
 
   regresar(){

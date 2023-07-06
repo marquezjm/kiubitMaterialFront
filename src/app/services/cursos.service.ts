@@ -8,11 +8,15 @@ import { CommonResponse, Curso } from '../models/public.interface';
 })
 export class CursosService {
 
-  url=environment.server_url
+  url='api'//environment.server_url
 
   constructor(private http:HttpClient) { }
 
   getCursos(){
     return this.http.get<CommonResponse<Curso[]>>(`${this.url}/public/cursos`)
+  }
+
+  getDetalleCurso(idCurso:string){
+    return this.http.get<CommonResponse<Curso>>(`${this.url}/private/cursos/seleccionarCursoById/${idCurso}`)
   }
 }

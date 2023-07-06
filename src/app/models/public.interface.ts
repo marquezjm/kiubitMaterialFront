@@ -2,7 +2,11 @@ export interface Curso {
   id:string,
   nombre:string,
   imagen:string,
-  descipcion:string
+  descipcion:string,
+  modulos:number,
+  horas:number,
+  minutos:number,
+  segundos:number,
 }
 
 export interface Testimonio {
