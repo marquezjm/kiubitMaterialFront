@@ -17,10 +17,10 @@
             <div class="col-6">
                 <div class="row h-100">
                     <div class="col-12 h-50 fw-bolder">
-                        titulo curso
+                        {{detalleCurso.nombre_curso}}
                     </div>
                     <div class="col-12 h-50 d-flex align-items-end">
-                        <span><i class="fas fa-list-ul"></i> modulos <i class="fas fa-clock"></i> minutos</span>
+                        <span><i class="fas fa-list-ul"></i> {{detalleCurso.modulos}} modulos <i class="fas fa-clock"></i> {{detalleCurso.minutos}} minutos</span>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                
+                                {{detalleCurso.descripcion}}
                             </mdb-tab>
                         </mdb-tabs>
                     </div>
@@ -67,14 +67,14 @@
                         <app-tema></app-tema>
                       </ng-template>
                     </mdb-accordion-item>
-                  
+
                     <mdb-accordion-item>
                       <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
                       <ng-template mdbAccordionItemBody>
                         <app-tema></app-tema>
                       </ng-template>
                     </mdb-accordion-item>
-                  
+
                     <mdb-accordion-item>
                       <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
                       <ng-template mdbAccordionItemBody>
@@ -222,7 +222,7 @@
                   </mdb-accordion>
             </div>
         </div>
-        
+
     </div>
 </div>
 </div>

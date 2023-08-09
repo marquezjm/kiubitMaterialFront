@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { CommonResponse, Curso } from '../models/public.interface';
+import { SeleccionarCursoByIdResponse } from '../models/responses-api.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,10 @@ export class CursosService {
   }
 
   getDetalleCurso(idCurso:string){
-    return this.http.get<CommonResponse<Curso>>(`${this.url}/private/cursos/seleccionarCursoById/${idCurso}`)
+    return this.http.get<CommonResponse<SeleccionarCursoByIdResponse>>(`${this.url}/private/cursos/seleccionarCursoById/${idCurso}`)
+  }
+
+  getContenidoCurso(idCurso:string){
+    return this.http.get<CommonResponse<Curso[]>>(`${this.url}/private/cursos/selectContenidoCurso/${idCurso}`)
   }
 }

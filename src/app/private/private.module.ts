@@ -17,6 +17,7 @@ import { RecomendadosComponent } from './dashboard/components/recomendados/recom
 import { CursoComponent } from './curso/curso.component';
 import { ModuloComponent } from './curso/components/modulo/modulo.component';
 import { TemaComponent } from './curso/components/tema/tema.component';
+import { ItemComponent } from './curso/components/item/item.component';
 
 @NgModule({
 
@@ -28,7 +29,8 @@ import { TemaComponent } from './curso/components/tema/tema.component';
         RecomendadosComponent,
         CursoComponent,
         ModuloComponent,
-        TemaComponent
+        TemaComponent,
+        ItemComponent
     ],
     imports: [
         CommonModule,
