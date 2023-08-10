@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Tema } from 'src/app/models/public.interface';
 
 @Component({
   selector: 'app-tema',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tema.component.scss']
 })
 export class TemaComponent implements OnInit {
+
+  @Input('tema') tema = {} as Tema
 
   constructor() { }
 

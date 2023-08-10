@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Modulo } from 'src/app/models/public.interface';
 
 @Component({
   selector: 'app-modulo',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modulo.component.scss']
 })
 export class ModuloComponent implements OnInit {
+
+  @Input('index') index = 0
+  @Input('modulo') modulo = {} as Modulo
 
   constructor() { }
 

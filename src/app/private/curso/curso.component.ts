@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Curso } from 'src/app/models/public.interface';
 import { SeleccionarCursoByIdResponse } from 'src/app/models/responses-api.interface';
 import { CursosService } from 'src/app/services/cursos.service';
 
@@ -12,6 +13,7 @@ export class CursoComponent implements OnInit {
 
   idCurso:string=''
   detalleCurso = {} as SeleccionarCursoByIdResponse
+  curso = {} as Curso;
 
   constructor(private router:Router,private route:ActivatedRoute,private cursoService:CursosService) { }
 
@@ -24,7 +26,7 @@ export class CursoComponent implements OnInit {
     })
     this.cursoService.getContenidoCurso(this.idCurso).subscribe(dato=>{
       console.log(dato);
-
+      this.curso=dato.response[0]
     })
   }
 

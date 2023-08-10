@@ -61,164 +61,16 @@
         <div class="row" style="position: sticky; top: 60px; right: 0; height: 80vh; overflow-y: scroll;">
             <div class="col-12">
                 <mdb-accordion>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
+                    <app-item *ngFor="let item of curso.listaModulos; let i = index" [index]="i" [modulo]="item" ></app-item>
 
-                    <mdb-accordion-item>
+                    <!--mdb-accordion-item>
                       <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
                       <ng-template mdbAccordionItemBody>
                         <app-tema></app-tema>
                       </ng-template>
-                    </mdb-accordion-item>
+                    </mdb-accordion-item-->
 
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
-                    <mdb-accordion-item>
-                      <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
-                      <ng-template mdbAccordionItemBody>
-                        <app-tema></app-tema>
-                      </ng-template>
-                    </mdb-accordion-item>
+
                   </mdb-accordion>
             </div>
         </div>

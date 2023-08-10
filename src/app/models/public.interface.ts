@@ -7,6 +7,7 @@ export interface Curso {
   horas:number,
   minutos:number,
   segundos:number,
+  listaModulos:Modulo[],
 }
 
 export interface Testimonio {
@@ -25,4 +26,25 @@ export interface CommonResponse<T>{
   response:T,
   success:boolean,
   message:string,
+}
+
+export interface Modulo{
+  id:string,
+  idCurso:string,
+  nombre:string,
+  descripcion:string,
+  horas:number,
+  minutos:number,
+  segundos:number,
+  listaTemas:Tema[],
+}
+
+export interface Tema{
+  id:string,
+  idModulo:string,
+  nombre:string,
+  descripcion:string,
+  horas:number,
+  minutos:number,
+  segundos:number,
 }

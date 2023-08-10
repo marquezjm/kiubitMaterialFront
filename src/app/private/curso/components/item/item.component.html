@@ -1,6 +1,6 @@
 <mdb-accordion-item>
-  <ng-template mdbAccordionItemHeader><app-modulo></app-modulo></ng-template>
+  <ng-template mdbAccordionItemHeader><app-modulo [modulo]="modulo" [index]="index" class="w-100"></app-modulo></ng-template>
   <ng-template mdbAccordionItemBody>
-    <app-tema></app-tema>
+    <app-tema *ngFor="let tema of modulo.listaTemas" [tema]="tema"></app-tema>
   </ng-template>
 </mdb-accordion-item>
